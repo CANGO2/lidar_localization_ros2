@@ -1,0 +1,63 @@
+/**:
+  ros__parameters:
+    # =========================
+    # Registration
+    # =========================
+    registration_method: "NDT_OMP"
+    score_threshold: 2.0
+
+    # =========================
+    # NDT params
+    # =========================
+    ndt_resolution: 0.8
+    ndt_step_size: 0.1
+    ndt_num_threads: 6
+    ndt_max_iterations: 35
+    transform_epsilon: 0.005
+
+    # =========================
+    # PointCloud preprocessing
+    # =========================
+    voxel_leaf_size: 0.2
+    scan_max_range: 12.0
+    scan_min_range: 0.7
+    scan_period: 0.1
+
+    # =========================
+    # Pose prediction
+    # =========================
+    use_odom: true
+    use_imu: true
+
+    # =========================
+    # Map
+    # =========================
+    use_pcd_map: true
+    map_path: "/home/nuc/GlobalMap2.pcd"
+
+    # =========================
+    # Initial pose
+    # =========================
+    set_initial_pose: true
+    initial_pose_x: 0.2001817744790057
+    initial_pose_y: -0.10616055151081674
+    initial_pose_z: 0.30502491084635985
+    initial_pose_qx: -0.007898408091633904
+    initial_pose_qy: 0.07410164074886097
+    initial_pose_qz: 0.004023878456395341
+    initial_pose_qw: 0.9972112953793091
+
+    # =========================
+    # Frames
+    # =========================
+    global_frame_id: map
+    odom_frame_id: odom
+    base_frame_id: base_link
+
+    # =========================
+    # Publish / debug
+    # =========================
+    pose_publish_frequency: 10.0
+    enable_timer_publishing: true
+    enable_map_odom_tf: false
+    enable_debug: true    
